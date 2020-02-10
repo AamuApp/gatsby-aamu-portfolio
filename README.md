@@ -1,6 +1,6 @@
 # Gatsby Portfolio Website
 
-This repo contains a static website written with [GatsbyJS](https://www.gatsbyjs.org/), integrated with content coming from [Aamu.app](https://aamu.app). 
+This repo contains a static website written with [GatsbyJS](https://www.gatsbyjs.org/), integrated with content coming from [Aamu.app](https://aamu.app/). 
 
 ![Preview](preview.png)
 
@@ -8,7 +8,14 @@ If you want to use try this out yourself, you first need to set up a project on 
 
 See the demo site here: **[DEMO](https://gifted-wing-586384.netlify.com/)**
 
-## Repo usage
+## Create an Aamu.app account
+
+To use this website, you need an [Aamu.app](https://aamu.app/) account. Create one/log into your account and then create a database from the template **gatsby-aamu-portfolio**: 
+
+
+
+
+## Repo usage on your machine
 
 First, install the dependencies of this project:
 
@@ -36,9 +43,9 @@ yarn build
 
 The final result will be saved in the `public` directory.
 
-## Hosting
+## Repo usage on a third party hosting service
 
-For hosting, you can use Netlify, for example: 
+You can also use this repository on Netlify: 
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AamuApp/gatsby-aamu-portfolio)
 
