@@ -1,10 +1,12 @@
 # Gatsby Portfolio Website
 
-This repo contains a static website written with [GatsbyJS](https://www.gatsbyjs.org/), integrated with content coming from [Aamu.app](https://aamu.app). **[[DEMO]](https://gifted-wing-586384.netlify.com/)**
+This repo contains a static website written with [GatsbyJS](https://www.gatsbyjs.org/), integrated with content coming from [Aamu.app](https://aamu.app). 
 
 ![Preview](preview.png)
 
-If you want to use try this out yourself, you first need to set up a project on Aamu.app which will host your data.
+If you want to use try this out yourself, you first need to set up a project on Aamu.app which will host your data. 
+
+See the demo site here: **[DEMO](https://gifted-wing-586384.netlify.com/)**
 
 ## Repo usage
 
