@@ -12,8 +12,17 @@ See the demo site here: **[DEMO](https://gifted-wing-586384.netlify.com/)**
 
 To use this website, you need an [Aamu.app](https://aamu.app/) account. Create one/log into your account and then create a database from the template **gatsby-aamu-portfolio**: 
 
+![2020-02-10_11-04](https://user-images.githubusercontent.com/433707/74135827-a8d7b100-4bf5-11ea-90c2-e70423077b7f.png)
 
+After that, you need an API key. Go to database settings for your newly created database and create an API key. Copy that to somewhere safe.
 
+## Repo usage on a third party hosting service
+
+You can use this repository on Netlify. After creating an Aamu.app database, click this: 
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AamuApp/gatsby-aamu-portfolio)
+
+Deployment to Netlify asks your API key which you created previously.
 
 ## Repo usage on your machine
 
@@ -42,12 +51,6 @@ yarn build
 ```
 
 The final result will be saved in the `public` directory.
-
-## Repo usage on a third party hosting service
-
-You can also use this repository on Netlify: 
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AamuApp/gatsby-aamu-portfolio)
 
 ## About
 
