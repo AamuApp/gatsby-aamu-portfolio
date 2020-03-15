@@ -22,7 +22,7 @@ You can use this repository on Netlify. After creating an Aamu.app database, cli
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AamuApp/gatsby-aamu-portfolio)
 
-Deployment to Netlify asks your API key which you created previously.
+Deployment to Netlify asks your **API key** which you created previously.
 
 ## Repo usage on your machine
 
