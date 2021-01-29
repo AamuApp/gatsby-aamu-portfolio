@@ -29,7 +29,7 @@ Deployment to Netlify asks your **API key** which you created previously.
 First, install the dependencies of this project:
 
 ```
-yarn install
+npm install
 ```
 
 Add an `.env` file containing the read-only API token of your Aamu.app database:
@@ -41,13 +41,13 @@ echo 'AAMU_API_KEY=abc123' >> .env
 Then, to run this website in development mode (with live-reload):
 
 ```
-yarn develop
+npm develop
 ```
 
 To build the final, production ready static website:
 
 ```
-yarn build
+npm build
 ```
 
 The final result will be saved in the `public` directory.
@@ -60,5 +60,5 @@ You can find further information about how to integrate Aamu.app with Gatsby in 
 
 This websites uses:
 
-- [Yarn](https://yarnpkg.com/) as package manager;
+- [npm](https://npmpkg.com/) as package manager;
 - [GatsbyJS](https://github.com/gatsbyjs/gatsby) as website generator;
