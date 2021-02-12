@@ -6,7 +6,7 @@ This repo contains a static website written with [GatsbyJS](https://www.gatsbyjs
 
 If you want to use try this out yourself, you first need to set up a project on Aamu.app which will host your data. 
 
-See the demo site here: **[DEMO](https://gifted-wing-586384.netlify.com/)**
+See the demo site here: **[DEMO](https://gatsby-aamu-portfolio.netlify.com/)**
 
 ## Create an Aamu.app account
 
