@@ -35,6 +35,7 @@ Submit the form and Netlify will start building your site. This cloned repositor
 
 First, install the dependencies of this project:
 
+```
 git clone git@github.com:AamuApp/gatsby-aamu-portfolio.git
 cd gatsby-aamu-portfolio
 npm install
