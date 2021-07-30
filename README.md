@@ -50,13 +50,13 @@ echo 'AAMU_API_KEY=abc123' >> .env
 Then, to run this website in development mode (with live-reload):
 
 ```
-npm develop
+npm run develop
 ```
 
 To build the final, production ready static website:
 
 ```
-npm build
+npm run build
 ```
 
 The final result will be saved in the `public` directory.
