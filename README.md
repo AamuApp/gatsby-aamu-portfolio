@@ -8,7 +8,7 @@ If you want to use try this out yourself, you first need to set up a project on 
 
 See the demo site here: **[DEMO](https://gatsby-aamu-portfolio.netlify.com/)**
 
-## Create an Aamu.app account
+### Create an Aamu.app account
 
 To use this website, you need an [Aamu.app](https://aamu.app/) account. Create one/log into your account and then create a database from the template **gatsby-aamu-portfolio**: 
 
