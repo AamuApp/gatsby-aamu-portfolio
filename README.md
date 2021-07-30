@@ -16,19 +16,27 @@ To use this website, you need an [Aamu.app](https://aamu.app/) account. Create o
 
 After that, you need an **API key**. Go to database settings for your newly created database and create an API key. Copy-paste that to somewhere safe.
 
-## Repo usage on a third party hosting service
+### Deployment to Netlify
 
-You can use this repository on Netlify. After creating an Aamu.app database, click this (**first create an API KEY in your Aamu.app database settings!**): 
+You can use this repository on Netlify. After creating an Aamu.app database, click this:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AamuApp/gatsby-aamu-portfolio)
 
-Deployment to Netlify asks your **API key** which you created previously.
+Netlify will ask your permission to clone this repository — click *Authorize*. 
 
-## Repo usage on your machine
+You will be then taken to a page which asks your *secret token*. Enter your API key here. 
+
+Submit the form and Netlify will start building your site. This cloned repository will be on your GitHub account.
+
+
+# Development on your local machine
+
+### Get the source code and install dependencies.
 
 First, install the dependencies of this project:
 
-```
+git clone git@github.com:AamuApp/gatsby-aamu-portfolio.git
+cd gatsby-aamu-portfolio
 npm install
 ```
 
