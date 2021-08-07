@@ -28,6 +28,15 @@ You will be then taken to a page which asks your *secret token*. Enter your API 
 
 Submit the form and Netlify will start building your site. This cloned repository will be on your GitHub account.
 
+#### Common Netlify errors
+
+```
+2:33:39 PM: error "gatsby-source-graphql" threw an error while running the sourceNodes lifecycle:
+2:33:39 PM: not finished source and transform nodes - 0.593s
+```
+
+Your Aamu.app API key is wronng or missing.
+
 
 # Development on your local machine
 
