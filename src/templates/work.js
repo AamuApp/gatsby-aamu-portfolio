@@ -1,10 +1,10 @@
 import React from 'react'
 import Slider from 'react-slick'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 
-export default ({data}) => (<Layout>
+const work = ({data}) => (<Layout>
     <article className="sheet">
       <div className="sheet__inner">
         <h1 className="sheet__title">{data.aamu.Work.title}</h1>
@@ -12,7 +12,7 @@ export default ({data}) => (<Layout>
         <div className="sheet__slider">
           <Slider infinite={true} slidesToShow={2} arrows>
             {data.aamu.Work.gallery.map(({image}) => (
-              <Img key={image.childImageSharp.id} alt="moi" fluid={image.childImageSharp.fluid} />
+              <GatsbyImage key={image.childImageSharp.id} alt="" image={image.childImageSharp.gatsbyImageData} />
             ))}
           </Slider>
         </div>
@@ -23,7 +23,7 @@ export default ({data}) => (<Layout>
           }}
         />
         <div className="sheet__gallery">
-          <Img alt="moi" fluid={data.aamu.Work.coverImage.image.childImageSharp.fluid} />
+          <GatsbyImage alt="" image={data.aamu.Work.coverImage.image.childImageSharp.gatsbyImageData} />
         </div>
       </div>
     </article>
@@ -41,20 +41,7 @@ export const query = graphql`
           image {
             childImageSharp {
               id
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-                presentationWidth
-                presentationHeight
-                aspectRatio
-                src
-                srcSet
-                sizes
-              }
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
@@ -64,20 +51,7 @@ export const query = graphql`
           image {
             childImageSharp {
               id
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-                presentationWidth
-                presentationHeight
-                aspectRatio
-                src
-                srcSet
-                sizes
-              }
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
@@ -85,23 +59,5 @@ export const query = graphql`
     }
   }
 `
-// export const query2 = graphql`
-//   query WorkQuery($slug: String!) {
-//     Work(slug: $slug) {
-//       title
-//       excerpt
-//       gallery {
-//         fluid(maxWidth: 200, imgixParams: { fm: "jpg", auto: "compress" }) {
-//           src
-//         }
-//       }
-//       description
-//       coverImage {
-//         url
-//         fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
-//           ...GatsbyDatoCmsSizes
-//         }
-//       }
-//     }
-//   }
-// `
+
+export default work;

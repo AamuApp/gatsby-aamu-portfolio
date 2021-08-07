@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Masonry from 'react-masonry-component'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 
 const IndexPage = ({data}) => (
@@ -12,7 +12,7 @@ const IndexPage = ({data}) => (
         <div key={work.id} className="showcase__item">
           <figure className="card">
             <Link to={`/work/${work.slug}`} className="card__image">
-              <Img fluid={work.coverImage.image.childImageSharp.fluid} />
+              <GatsbyImage alt="{work.title}" image={work.coverImage.image.childImageSharp.gatsbyImageData} />
             </Link>
             <figcaption className="card__caption">
               <h6 className="card__title">
@@ -43,21 +43,7 @@ export const query = graphql`
           url
           image {
             childImageSharp {
-              id
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-                presentationWidth
-                presentationHeight
-                aspectRatio
-                src
-                srcSet
-                sizes
-              }
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
@@ -65,21 +51,7 @@ export const query = graphql`
           url
           image {
             childImageSharp {
-              id
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-                presentationWidth
-                presentationHeight
-                aspectRatio
-                src
-                srcSet
-                sizes
-              }
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }

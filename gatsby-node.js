@@ -1,5 +1,4 @@
 const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
 const { createRemoteFileNode } = require(`gatsby-source-filesystem`)
 const remark = require('remark')
 const remark_html = require('remark-html')
